@@ -33,7 +33,7 @@
 
 /****** IMPORTING FONTS ******/
 :root {
-  --clr-section: #A8B2B9;
+  --clr-section: #5A7184;
 }
 
 /****** GlOBAL STYLES ******/
@@ -56,6 +56,10 @@ section {
 .main-text {
   line-height: 2;
   color: var(--clr-section);
+}
+
+.main-bg {
+  background-color: #E4E4E4;
 }
 
 .ff-prim {
@@ -121,6 +125,23 @@ nav .navbar-toggler:focus {
 }
 
 /****** COLLABORATION ******/
-.collaboration :first-child :first-child {
+.collaboration > :first-child > :first-child {
   max-width: 525px;
+}
+.box {
+  max-width: 400px;
+  padding: 1rem;
+  background-color: white;
+}
+.icon-holder {
+  margin: 0 auto 2rem;
+  padding: 6px;
+  width: fit-content;
+  border: 1px solid var(--clr-section);
+  border-radius: 6px;
+}
+@media (min-width: 768px) {
+  .icon-holder {
+    margin-left: 0;  
+  }
 }
