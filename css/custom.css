@@ -33,12 +33,14 @@
 
 /****** IMPORTING FONTS ******/
 :root {
+  --clr-prim: #183B56;
   --clr-section: #5A7184;
 }
 
 /****** GlOBAL STYLES ******/
 body {
   font-family: 'Open Sans', sans-serif;
+  color: var(--clr-prim);
 }
 
 section {
@@ -100,6 +102,13 @@ section {
 
 /****** HEADER ******/
 /* NAV */
+nav .navbar-nav a {
+  color: var(--clr-prim);
+  font-weight: 600;
+}
+nav .navbar-nav a:hover {
+  color: var(--clr-section)
+}
 nav .navbar-toggler {
   border: 0;
 }
@@ -145,3 +154,5 @@ nav .navbar-toggler:focus {
     margin-left: 0;  
   }
 }
+
+/****** TESTIMONIALS ******/
