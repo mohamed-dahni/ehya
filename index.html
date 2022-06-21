@@ -1,101 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Cairo:wght@200;300;400;500;600;700;800&family=Oooh+Baby&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- css styles -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/custom.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- start header -->
-    <header id="home">
-      <!-- nav -->
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-md">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/logo.svg" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Landings
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Pages
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Help</a>
-              </li>
-            </ul>
-            <a class="btn btn-outline-primary main-btn" href="#">Get it now</a>
-          </div>
-        </div>
-      </nav>
-      <!-- banner -->
-      <div class="banner container-md mt-5 mb-5 pt-3 pt-lg-0 pb-3 pb-lg-0 d-lg-flex justify-content-lg-between align-items-center">
-        <div class="mb-5">
-          <div class="info text-center text-lg-start mb-4 d-flex flex-column align-items-center align-items-lg-start">
-            <h1>A virtual office for remote teams</h1>
-            <p class="main-text">
-              Re-discover the flow of working together in-person. See,
-              talk to, and collaborate with your team in one click.
-              Now, every teams can have a virtual office
-            </p>
-          </div>
-          <div class="buttons d-sm-flex justify-content-center gap-sm-3 justify-content-lg-start">
-            <a class="btn btn-primary main-btn mb-3 mb-sm-0" href="#">Get Started for Free</a>
-            <a class="btn btn-light main-btn" href="#">See Pricing</a>
-          </div>
-        </div>
-        <div>
-          <img class="img-fluid" src="./assets/illustration-hero.png" alt="home image">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&family=Cairo:wght@200;300;400;500;600;700;800&family=Oooh+Baby&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!-- css styles -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- start header -->
+  <header id="home">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-md">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.svg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Landings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+          <a class="btn btn-outline-primary main-btn" href="#">Get it now</a>
         </div>
       </div>
-      <!-- partners -->
-      <div class="partners container-md">
-        <div class="partners-brands d-flex flex-wrap justify-content-center gap-4 gap-lg-5 mb-5 pt-3 pb-3">
-          <img src="./assets/logo-slack.svg" alt="slack logo">
-          <img src="./assets/logo-netflix.svg" alt="netflex logo">
-          <img src="./assets/logo-google.svg" alt="google logo">
-          <img src="./assets/logo-airbnb.svg" alt="fitbit logo">
-          <img src="./assets/logo-uber.svg" alt="airbnb logo">
+    </nav>
+  </header>
+  <!-- end header -->
+
+  <main>
+    <!-- start banner -->
+    <section class="banner container-md d-lg-flex justify-content-lg-between align-items-center">
+      <div class="mb-5">
+        <div class="info text-center text-lg-start mb-4 d-flex flex-column align-items-center align-items-lg-start">
+          <h1>A virtual office for remote teams</h1>
+          <p class="main-text">
+            Re-discover the flow of working together in-person. See,
+            talk to, and collaborate with your team in one click.
+            Now, every teams can have a virtual office
+          </p>
         </div>
-        <div class="dots d-grid justify-content-center">
-          <img class="img-fluid" src="./assets/dots.svg" alt="">
+        <div class="buttons d-sm-flex justify-content-center gap-sm-3 justify-content-lg-start">
+          <a class="btn btn-primary main-btn mb-3 mb-sm-0" href="#">Get Started for Free</a>
+          <a class="btn btn-light main-btn" href="#">See Pricing</a>
         </div>
       </div>
-    </header>
-    <!-- end header -->
-    
+      <div>
+        <img class="img-fluid" src="./assets/illustration-hero.png" alt="home image">
+      </div>
+    </section>
+    <!-- end banner -->
+
+    <!-- start partners -->
+    <div class="partners container-md pt-5 mt-2">
+      <div class="partners-brands d-flex flex-wrap justify-content-center gap-4 gap-lg-5 mb-5 pt-3 pb-3">
+        <img src="./assets/logo-slack.svg" alt="slack logo">
+        <img src="./assets/logo-netflix.svg" alt="netflex logo">
+        <img src="./assets/logo-google.svg" alt="google logo">
+        <img src="./assets/logo-airbnb.svg" alt="fitbit logo">
+        <img src="./assets/logo-uber.svg" alt="airbnb logo">
+      </div>
+      <div class="dots d-grid justify-content-center">
+        <img class="img-fluid" src="./assets/dots.svg" alt="">
+      </div>
+    </d>
+    <!-- end partners -->
+
     <!-- start collaboration -->
     <section class="collaboration" id="collaboration">
       <div class="container-md d-lg-flex justify-content-lg-between">
@@ -103,8 +118,8 @@
           <h2 class="h4 mb-3 text-black-50 text-uppercase ls-1">collaboration</h2>
           <h3 class="h1 mb-3 text-capitalize ff-prim-bold">quick collaboration</h3>
           <p class="main-text mb-4">
-            See which work apps your team is working in, 
-            and join them with a click. Shared cursors = better 
+            See which work apps your team is working in,
+            and join them with a click. Shared cursors = better
             than screen-sharing.
           </p>
           <a class="btn btn-primary main-btn" href="#">learn more</a>
@@ -114,7 +129,8 @@
         </div>
       </div>
 
-      <div class="container-md d-flex flex-column align-items-center flex-md-row justify-content-lg-between pt-5 text-center text-md-start">
+      <div
+        class="container-md d-flex flex-column align-items-center flex-md-row justify-content-lg-between pt-5 text-center text-md-start">
         <div class="box">
           <div class="icon-holder">
             <img src="./assets/icon-computer.svg" alt="computer icon">
@@ -122,7 +138,7 @@
           <h4 class="pb-2">Bring your ideas to life</h4>
           <p class="main-text">
             From pixel-perfect icons and scalable
-            vector graphics, to full user flows and 
+            vector graphics, to full user flows and
             interactive prototype.
           </p>
         </div>
@@ -133,7 +149,7 @@
           <h4 class="pb-2">Build designs from home</h4>
           <p class="main-text">
             From pixel-perfect icons and scalable
-            vector graphics, to full user flows and 
+            vector graphics, to full user flows and
             interactive prototype.
           </p>
         </div>
@@ -144,7 +160,7 @@
           <h4 class="pb-2">Discussion intens live</h4>
           <p class="main-text">
             From pixel-perfect icons and scalable
-            vector graphics, to full user flows and 
+            vector graphics, to full user flows and
             interactive prototype.
           </p>
         </div>
@@ -154,7 +170,9 @@
 
     <div class="section-holder container-md d-md-flex flex-md-column flex-lg-row gap-lg-5">
       <!-- start universal rooms -->
-      <section class="universal-rooms d-md-flex justify-content-md-betweend align-items-md-center flex-lg-column gap-md-4" id="universal-rooms">
+      <section
+        class="universal-rooms d-md-flex justify-content-md-betweend align-items-md-center flex-lg-column gap-md-4"
+        id="universal-rooms">
         <div class="d-flex justify-content-center main-bg rounded-3 mb-4 mb-md-0">
           <img class="img-fluid" src="./assets/illustration-2.svg" alt="">
         </div>
@@ -162,14 +180,14 @@
           <h2 class="h5 mb-3 text-black-50 text-uppercase ls-1">collaboration</h2>
           <h3 class="h2 mb-3 text-capitalize ff-prim-bold">quick collaboration</h3>
           <p class="main-text mb-4 ms-auto me-auto">
-            See which work apps your team is working in, 
-            and join them with a click. Shared cursors = better 
+            See which work apps your team is working in,
+            and join them with a click. Shared cursors = better
             than screen-sharing.
           </p>
         </div>
       </section>
       <!-- end universal rooms -->
-      
+
       <!-- start assistancing -->
       <section class="assistancing d-md-flex align-items-md-center flex-lg-column gap-md-4" id="assistancing">
         <div class="d-flex justify-content-center order-1 order-lg-0 main-bg rounded-3 mb-4 mb-md-0">
@@ -179,8 +197,8 @@
           <h2 class="h5 mb-3 text-black-50 text-uppercase ls-1">collaboration</h2>
           <h3 class="h2 mb-3 text-capitalize ff-prim-bold">quick collaboration</h3>
           <p class="main-text mb-4 ms-auto me-auto">
-            See which work apps your team is working in, 
-            and join them with a click. Shared cursors = better 
+            See which work apps your team is working in,
+            and join them with a click. Shared cursors = better
             than screen-sharing.
           </p>
         </div>
@@ -188,7 +206,11 @@
       <!-- end assistancing -->
     </div>
 
-    <!-- scripts -->
-    <script src="js/bootstrap.bundle.js"></script>
-  </body>
+    
+  </main>
+
+  <!-- scripts -->
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+
 </html>
