@@ -216,3 +216,69 @@ nav .navbar-toggler:focus {
 .prev {
   transform: rotateY(.5turn);
 }
+
+/****** INTEGRATION ******/
+.integration .info {
+  max-width: 500px;
+  margin-inline: auto;
+}
+.integration .icons-holder {
+  display: flex;
+}
+.icons-left,
+.icons-right {
+  position: relative;
+  height: 160px;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .icons-left,
+  .icons-right {
+    position: absolute;
+    top: 0;
+    width: 30%;
+  }
+  .icons-left {
+    right: 75%;
+  }
+  .icons-right {
+    left: 75%;
+  }
+}
+.icons-left > div,
+.icons-right > div {
+  position: absolute;
+}
+.icons-left > div:first-child {
+  top: 2%; left: 2%;
+}
+.icons-left > div:nth-child(2) {
+  top: 0; right: 10%;
+}
+.icons-left > div:nth-child(3) {
+  bottom: 0; left: 5%;
+}
+.icons-left > div:nth-child(4) {
+  top: 39%; right: 45%;
+}
+.icons-left > div:nth-child(5) {
+  bottom: 1%; right: 10%;
+}
+.icons-right > div:first-child {
+  top: 3%; left: 2%;
+}
+.icons-right > div:nth-child(2) {
+  top: 2%; right: 10%;
+}
+.icons-right > div:nth-child(3) {
+  bottom: 0; left: 5%;
+}
+.icons-right > div:nth-child(4) {
+  top: 39%; right: 60%;
+}
+.icons-right > div:nth-child(5) {
+  bottom: 10%; right: 10%;
+}
+.icons-right > div:nth-child(6) {
+  top: 20%; right: 30%;
+}
