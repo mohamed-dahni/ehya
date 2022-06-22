@@ -156,3 +156,63 @@ nav .navbar-toggler:focus {
 }
 
 /****** TESTIMONIALS ******/
+.testimonials-holder {
+  color: white;
+  background-image: linear-gradient(white 15%, var(--clr-prim) 15%);
+}
+@media (min-width: 768px) {
+  .testimonials-holder {
+    background-image: linear-gradient(var(--clr-prim) 87%, white 87px);
+  }
+}
+.card-head {
+  margin: 0 auto 1.5rem;
+  padding: 6px;
+  max-width: 200px;
+  border: 2px solid white;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.testimonial-meta p:last-child {
+  color: rgba(255, 255, 255, .8);
+  font-size: 1.2rem;
+}
+.circles {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .circles {
+    position: absolute;
+    top: 60px; right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .circles {
+    position: absolute;
+    top: 60px; right: 20px;
+  }
+}
+.circles .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .4);
+}
+.circles .circle.active {
+  background-color: white;
+}
+.prev,
+.next {
+  display: grid;
+  place-content: center;
+  border-radius: 6px;
+  background-color: white;
+  padding-inline: 20px;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+.prev {
+  transform: rotateY(.5turn);
+}
