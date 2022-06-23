@@ -285,6 +285,13 @@ nav .navbar-toggler:focus {
 }
 
 /****** PRICING PLAN ******/
+/* pricing */
+@media (min-width: 768px) {
+  .pricing {
+    background-color: white;
+    background-image: linear-gradient(rgb(var(--bs-light-rgb)) 85%, white 85%);
+  }
+}
 .switch {
   position: relative;
   display: inline-block;
