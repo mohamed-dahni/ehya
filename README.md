@@ -2,8 +2,8 @@
 
 ### Links
 
-- [Add solution URL here](https://your-solution-url.com)
-- [Add live site URL here](https://your-live-site-url.com)
+- [solution URL](https://github.com/mohamed-dahni/ehya/edit)
+- [live site URL](https://your-live-site-url.com](https://mohamed-dahni.github.io/ehya)
 
 ### Built with
 
