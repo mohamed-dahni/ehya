@@ -371,3 +371,26 @@ input:checked + .slider:before {
   color: white;
   background-color: rgb(var(--clr-light-green-rgb));
 }
+
+/****** SUBSCRIBE ******/
+.input-group {
+  height: fit-content;
+}
+@media (min-width: 992px) {
+  .input-group {
+    width: 490px
+  }
+}
+@media (min-width: 1200px) {
+  .input-group {
+    width: 590px
+  }
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgb(0, 0, 0, 0.1);
+  border-color: var(--clr-prim);
+}
+.input-group .btn {
+  background-color: var(--clr-prim);
+  color: white;
+}
