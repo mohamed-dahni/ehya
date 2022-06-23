@@ -3,7 +3,7 @@
 ### Links
 
 - [solution URL](https://github.com/mohamed-dahni/ehya/edit)
-- [live site URL](https://your-live-site-url.com](https://mohamed-dahni.github.io/ehya)
+- [live site URL](https://mohamed-dahni.github.io/ehya)
 
 ### Built with
 
