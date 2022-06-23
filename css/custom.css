@@ -45,6 +45,7 @@ body {
 
 section {
   padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
 /****** COMPONENTS ******/
@@ -101,7 +102,6 @@ section {
 }
 
 /****** HEADER ******/
-/* NAV */
 nav .navbar-nav a {
   color: var(--clr-prim);
   font-weight: 600;
@@ -115,7 +115,8 @@ nav .navbar-toggler {
 nav .navbar-toggler:focus {
   box-shadow: none;
 }
-/* BANNER */
+
+/****** BANNER ******/
 .banner {
   min-height: 65vh;
 }
@@ -281,4 +282,67 @@ nav .navbar-toggler:focus {
 }
 .icons-right > div:nth-child(6) {
   top: 20%; right: 30%;
+}
+
+/****** PRICING PLAN ******/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bs-yellow);
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.annual-plan {
+  position: relative;
+}
+.annual-plan::before {
+  content: "Save 10%";
+  position: absolute;
+  color: var(--bs-yellow);
+  bottom: 100%; left: 0;
+}
+.plans > * {
+  max-width: 900px;
+  margin-inline: auto;
+}
+.price {
+  background-color: rgb(var(--bs-light-rgb))
+}
+@media (min-width: 768px) {
+  .price {
+    background-color: white;
+  }
 }
