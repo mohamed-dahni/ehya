@@ -44,7 +44,8 @@ body {
   color: var(--clr-prim);
 }
 
-section {
+section,
+footer {
   padding-top: 5rem;
   padding-bottom: 4rem;
 }
@@ -146,6 +147,11 @@ nav .navbar-toggler:focus {
   .icon-holder {
     margin-left: 0;  
   }
+}
+
+/****** COLLABORATION ******/
+.assistancing > :first-child {
+  aspect-ratio: 1 / 1.17;
 }
 
 /****** TESTIMONIALS ******/
@@ -393,4 +399,27 @@ input:checked + .slider:before {
 .input-group .btn {
   background-color: var(--clr-prim);
   color: white;
+}
+
+/****** FOOTER ******/
+footer a {
+  text-decoration: none;
+}
+.social-media > * {
+  display: inline-grid;
+  place-items: center;
+  padding-inline: 1rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+.heart {
+  display: inline-grid;
+  place-items: center;
+  width: fit-content;
+  padding-inline: 12px;
+  margin-bottom: 1rem;
+  aspect-ratio: 1;
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 15px 0.25rem rgba(var(--bs-primary-rgb), .1);
 }
