@@ -35,6 +35,7 @@
 :root {
   --clr-prim: #183B56;
   --clr-section: #5A7184;
+  --clr-light-green-rgb: 54, 179, 126;
 }
 
 /****** GlOBAL STYLES ******/
@@ -57,6 +58,7 @@ section {
 }
 
 .main-text {
+  max-width: 480px;
   line-height: 2;
   color: var(--clr-section);
 }
@@ -89,16 +91,6 @@ section {
   font-family: HKGrotesk;
   font-weight: semibold;
   font-style: italic;
-}
-
-.ls-1 {
-  letter-spacing: 1px;
-}
-.ls-2 {
-  letter-spacing: 1.5px;
-}
-.ls-3 {
-  letter-spacing: 2px;
 }
 
 /****** HEADER ******/
@@ -285,12 +277,8 @@ nav .navbar-toggler:focus {
 }
 
 /****** PRICING PLAN ******/
-/* pricing */
-@media (min-width: 768px) {
-  .pricing {
-    background-color: white;
-    background-image: linear-gradient(rgb(var(--bs-light-rgb)) 85%, white 85%);
-  }
+.pricing {
+  background-image: linear-gradient(rgb(var(--bs-light-rgb)) 85%, white 85%);
 }
 .switch {
   position: relative;
@@ -352,4 +340,34 @@ input:checked + .slider:before {
   .price {
     background-color: white;
   }
+}
+.devider {
+  position: absolute;
+  border: 1px solid var(--bs-gray-200);
+  bottom: -65px;left: 5px; right: 5px;
+}
+
+/****** DOWNLOAD ******/
+.download .card {
+  border: none;
+  border-radius: 0;
+}
+.download .card:first-child {
+  background-color: rgb(var(--clr-light-green-rgb));
+}
+.download .card:not(:first-child) {
+  background-color:rgba(var(--clr-light-green-rgb), .2);
+}
+.download .card img {
+  width: 35px;
+  margin-inline: auto;
+}
+.green-btn {
+  color: rgb(var(--clr-light-green-rgb));
+  border-color: rgb(var(--clr-light-green-rgb));
+}
+.green-btn:hover {
+  border-color:rgb(var(--clr-light-green-rgb));
+  color: white;
+  background-color: rgb(var(--clr-light-green-rgb));
 }
